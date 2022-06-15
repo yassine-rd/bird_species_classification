@@ -5,6 +5,14 @@
 body {
   background-color: #a7cea7;
 }
+#motivation {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+#colab {
+  text-decoration: none;
+}
 .img-preview {
   width: 256px;
   height: 256px;

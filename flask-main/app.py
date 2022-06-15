@@ -1,4 +1,3 @@
-import os
 import numpy as np
 
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
@@ -7,12 +6,10 @@ from tensorflow.keras.preprocessing import image
 
 from flask import Flask, request, render_template
 
+from constants import *
+
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-
-DIR_BASE = 'test_db'
-DIR_TRAIN = os.path.join(DIR_BASE, 'train')
-
-my_model = load_model('models/local_model_10.h5')
+CNN_MODEL = load_model('models/local_model_10.h5')
 
 app = Flask(__name__)
 
@@ -32,23 +29,30 @@ def upload():
         print("Uploaded image: ", filepath)
         f.save(filepath)
 
+        # Reshaping the image
         img = image.load_img(filepath, target_size=(224, 224))
         x = image.img_to_array(img)
         x = np.expand_dims(x, axis=0)
 
-        predictions = my_model.predict(x)
+        # Making predictions
+        predictions = CNN_MODEL.predict(x)
         print("Predictions: ", predictions)
 
+        #
         generator = ImageDataGenerator()
         train_ds = generator.flow_from_directory(DIR_TRAIN, target_size=(224, 224), batch_size=32)
 
+        #
         classes = list(train_ds.class_indices.keys())
         print("Bird specie: ", classes[np.argmax(predictions)])
 
-        probability = round(np.max(my_model.predict(x) * 100), 2)
+        #
+        probability = round(np.max(CNN_MODEL.predict(x) * 100), 2)
         print("Probability: ", probability)
 
-        text = "La classe de l'oiseau sur l'image passée est : " + str(classes[np.argmax(predictions)]) + " avec une probabilité de " + str(probability)
+        #
+        text = "La classe de l'oiseau sur l'image passée est : " + str(classes[np.argmax(predictions)]) \
+            + " avec une probabilité de " + str(probability) + "%"
 
     return text
 

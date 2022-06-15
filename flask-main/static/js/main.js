@@ -1,9 +1,10 @@
 $(document).ready(function () {
 
     // Initialisation
+
     /*
-     * Après que la page soit chargée, on cache les éléments ayant comme classe
-     * 'image-section' et 'loader', et l'élémnent ayant comme id 'result'
+     * After the page is loaded, we hide the elements with class 'image-section' and 'loader'
+     * and the element with id 'result
      */
 
     $('.image-section').hide();
@@ -15,9 +16,9 @@ $(document).ready(function () {
         if (input.files && input.files[0]) {
             const reader = new FileReader();
             reader.onload = function (e) {
-                $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
-                $('#imagePreview').hide();
-                $('#imagePreview').fadeIn(650);
+                $('#imagePreview').css('background-image', 'url(' + e.target.result + ')').hide().fadeIn(650);
+                // $('#imagePreview').hide();
+                // $('#imagePreview').fadeIn(650);
             }
             reader.readAsDataURL(input.files[0]);
         }
@@ -25,8 +26,8 @@ $(document).ready(function () {
     $("#imageUpload").change(function () {
         $('.image-section').show();
         $('#btn-predict').show();
-        $('#result').text('');
-        $('#result').hide();
+        $('#result').text('').hide();
+        // $('#result').hide();
         readURL(this);
     });
 
@@ -50,11 +51,10 @@ $(document).ready(function () {
             success: function (data) {
                 // Get and display the result
                 $('.loader').hide();
-                $('#result').fadeIn(1400);
-                $('#result').text(' ' + data);
-                console.log('Success!');
+                $('#result').fadeIn(1500).text(' ' + data);
+                // $('#result').text(' ' + data);
+                console.log('Prediction done!');
             },
         });
     });
-
 });
