@@ -46,11 +46,11 @@ def upload():
         generator = ImageDataGenerator()
         train_ds = generator.flow_from_directory(DIR_TRAIN, target_size=IMAGE_SIZE, batch_size=BATCH_SIZE_32)
 
-        #
+        # Classifying
         classes = list(train_ds.class_indices.keys())
         print("Bird specie: ", classes[np.argmax(predictions)])
 
-        #
+        # Calculating prediction probability
         probability = round(np.max(CNN_MODEL.predict(x) * 100), 2)
         print("Probability: ", probability)
 
