@@ -26,14 +26,15 @@ def index():
 def upload():
     if request.method == 'POST':
 
+        # Getting the image from user
         f = request.files['image']
-        basepath = os.path.dirname(__file__)
-        filepath = os.path.join(basepath, 'uploads', f.filename)
-        print("Uploaded image: ", filepath)
-        f.save(filepath)
+        base_path = os.path.dirname(__file__)
+        file_path = os.path.join(base_path, 'uploads', f.filename)
+        print("Uploaded image: ", file_path)
+        f.save(file_path)
 
         # Reshaping the image
-        img = image.load_img(filepath, target_size=IMAGE_SIZE)
+        img = image.load_img(file_path, target_size=IMAGE_SIZE)
         x = image.img_to_array(img)
         x = np.expand_dims(x, axis=0)
 
@@ -41,9 +42,9 @@ def upload():
         predictions = CNN_MODEL.predict(x)
         print("Predictions: ", predictions)
 
-        #
+        # Generating batches of tensor image data with real-time data augmentation
         generator = ImageDataGenerator()
-        train_ds = generator.flow_from_directory(DIR_TRAIN, target_size=IMAGE_SIZE, batch_size=32)
+        train_ds = generator.flow_from_directory(DIR_TRAIN, target_size=IMAGE_SIZE, batch_size=BATCH_SIZE_32)
 
         #
         classes = list(train_ds.class_indices.keys())
@@ -53,7 +54,7 @@ def upload():
         probability = round(np.max(CNN_MODEL.predict(x) * 100), 2)
         print("Probability: ", probability)
 
-        #
+        # Printing the output message
         text = "La classe de l'oiseau sur l'image passée est : " + str(classes[np.argmax(predictions)]) \
             + " avec une probabilité de " + str(probability) + "%"
 

@@ -8,3 +8,12 @@ DIR_TEST = os.path.join(DIR_BASE, 'test')
 
 # Image properties
 IMAGE_SIZE = (224, 224)
+INPUT_IMAGE_SIZE = (224, 224, 3)
+
+# Batches properties
+BATCH_SIZE_32 = 32
+BATCH_SIZE_64 = 64
+
+# CNN properties
+KERNEL_SIZE = (3, 3)
+POOL_SIZE = (3, 3)
