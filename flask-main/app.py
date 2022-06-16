@@ -8,7 +8,10 @@ from flask import Flask, request, render_template
 
 from constants import *
 
+# Disabling tensorflow warnings
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+
+# Defining cnn model
 CNN_MODEL = load_model('models/local_model_10.h5')
 
 app = Flask(__name__)
@@ -30,7 +33,7 @@ def upload():
         f.save(filepath)
 
         # Reshaping the image
-        img = image.load_img(filepath, target_size=(224, 224))
+        img = image.load_img(filepath, target_size=IMAGE_SIZE)
         x = image.img_to_array(img)
         x = np.expand_dims(x, axis=0)
 
@@ -40,7 +43,7 @@ def upload():
 
         #
         generator = ImageDataGenerator()
-        train_ds = generator.flow_from_directory(DIR_TRAIN, target_size=(224, 224), batch_size=32)
+        train_ds = generator.flow_from_directory(DIR_TRAIN, target_size=IMAGE_SIZE, batch_size=32)
 
         #
         classes = list(train_ds.class_indices.keys())
