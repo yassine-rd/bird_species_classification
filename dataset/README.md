@@ -1,4 +1,4 @@
-# Downloading our bird database
+# Birds dataset
 
 ## BIRDS-10
 
