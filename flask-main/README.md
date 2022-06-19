@@ -1,6 +1,6 @@
-#Tensorflow installation instructions for arm64 architectures
+# Tensorflow installation instructions for arm64 architectures
 
-##Step 1: Environment setup
+## Step 1: Environment setup
 
 * Download and install [Conda env](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh):
 ```javascript
@@ -14,25 +14,25 @@ conda create -n web_app python=3.9
 conda activate web_app
 ```
 
-##Step 2: Install the TensorFlow dependencies
+## Step 2: Install the TensorFlow dependencies
 
 ```javascript
 conda install -c apple tensorflow-deps
 ```
 
-##Step 3: Install base TensorFlow
+## Step 3: Install base TensorFlow
 
 ```javascript
 pip install tensorflow-macos
 ```
 
-##Step 4: Install tensorflow-metal plugin
+## Step 4: Install tensorflow-metal plugin
 
 ```javascript
 pip install tensorflow-metal
 ```
 
-##Verifying that tensorflow had been properly installed
+## Verifying that tensorflow had been properly installed
 * Open a python interpreter
 ```javascript
 python
