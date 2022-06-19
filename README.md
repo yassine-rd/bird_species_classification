@@ -15,3 +15,5 @@ Training a deep learning model in order to classify birds through photographs.
 1) [Tensorflow for arm64 architectures](https://github.com/yassine-rd/bird_species_classification/blob/master/requirements/TENSORFLOW.md)
 2) [Requirements](https://github.com/yassine-rd/bird_species_classification/blob/master/requirements/README.md)
 3) [Dataset](https://github.com/yassine-rd/bird_species_classification/blob/master/dataset/README.md)
+
+For more information please contact yassine.rodani@uha.fr or yassine.rodani@gmail.com

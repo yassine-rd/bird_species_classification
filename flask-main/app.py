@@ -12,7 +12,7 @@ from constants import *
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 # Defining cnn model
-CNN_MODEL = load_model('models/local_model_2.h5')
+CNN_MODEL = load_model('../models/local_model_10.h5')
 
 app = Flask(__name__)
 
