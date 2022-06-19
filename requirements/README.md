@@ -12,7 +12,7 @@ Installing the modules needed to train a convolutional neural network (tensorflo
 it is required to properly install the graphic cards drives, CUDA, cuDNN and other dependencies. Special caution should be 
 taken to install a tensorflow version that is compatible with the machine's CUDA and cuDNN versions, 
 to install the right CUDA version for the machine's graphic card and to install tensorflow on the created virtual environment
-as explained [here](https://github.com/yassine-rd/bird_species_classification/tree/master/requirements/TENSORFLOW.md).
+as explained [here](https://github.com/yassine-rd/bird_species_classification/blob/master/requirements/TENSORFLOW.md).
 
 All other modules are easier to install by typing on the terminal after activating the environment:
 
