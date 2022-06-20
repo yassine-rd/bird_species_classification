@@ -6,7 +6,7 @@ from tensorflow.keras.preprocessing import image
 
 from flask import Flask, request, render_template
 
-from constants import *
+from utils.constants import *
 
 # Disabling tensorflow warnings
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
