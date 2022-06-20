@@ -1,9 +1,7 @@
 import numpy as np
-
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
-
 from flask import Flask, request, render_template
 
 from constants import *
