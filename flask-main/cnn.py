@@ -5,6 +5,7 @@ from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 from tensorflow.keras import regularizers
 
 from constants import *
+from utils import *
 from process import train_ds, valid_ds, test_ds
 
 # Disabling tensorflow warnings
@@ -68,3 +69,9 @@ model.evaluate(test_ds, use_multiprocessing=True, workers=10)
 
 # Saving the trained model
 model.save('../models/cnn_model.h5')
+
+# Plotting accuracy and loss graphs
+plt.style.use('fivethirtyeight')
+plot_acc(history)
+plot_loss(history)
+plt.style.use('default')

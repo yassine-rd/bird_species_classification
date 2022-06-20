@@ -4,6 +4,7 @@ from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 from tensorflow.keras.applications.vgg16 import VGG16
 
 from constants import *
+from utils import *
 from process import improved_test_ds, improved_train_ds, improved_valid_ds
 
 # Disabling tensorflow warnings
@@ -62,3 +63,9 @@ vgg_model.evaluate(improved_test_ds, use_multiprocessing=True, workers=10)
 
 # Saving the trained model
 vgg_model.save("../models/vgg_model.h5")
+
+# Plotting accuracy and loss graphs
+plt.style.use('fivethirtyeight')
+plot_acc(vgg_history)
+plot_loss(vgg_history)
+plt.style.use('default')
