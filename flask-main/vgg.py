@@ -3,7 +3,7 @@ from tensorflow import keras
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 from tensorflow.keras.applications.vgg16 import VGG16
 
-from utils.constants import *
+from constants import *
 from process import improved_test_ds, improved_train_ds, improved_valid_ds
 
 nb_classes = len(improved_train_ds.class_indices.keys())

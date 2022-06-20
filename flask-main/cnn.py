@@ -4,7 +4,7 @@ from tensorflow.keras.layers import Dense, MaxPooling2D, Flatten, Conv2D, Dropou
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 from tensorflow.keras import regularizers
 
-from utils.constants import *
+from constants import *
 from process import train_ds, valid_ds, test_ds
 
 nb_classes = len(train_ds.class_indices.keys())
