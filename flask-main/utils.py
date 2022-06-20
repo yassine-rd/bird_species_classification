@@ -68,6 +68,10 @@ def plot_acc(history):
 
 # Defining a function that plot loss variation on the train and validation set vs epochs count
 def plot_loss(history):
+    """
+    Takes a model history as input and displays a graph representing loss variation on the train and validation
+    set vs epochs count
+    """
     loss = history.history['loss']
     val_loss = history.history['val_loss']
     epochs = range(len(loss))
