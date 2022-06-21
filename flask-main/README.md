@@ -5,7 +5,7 @@ The code is divided as follows:
 - The [app.py](https://github.com/yassine-rd/bird_species_classification/blob/master/flask-main/app.py) python file contains the necessary code to run the web application.
 - The [process.py](https://github.com/yassine-rd/bird_species_classification/blob/master/flask-main/process.py) python file contains the necessary code for data pre-processing.
 - The [cnn.py](https://github.com/yassine-rd/bird_species_classification/blob/master/flask-main/cnn.py) python file contains first model implementation.
-- The [vgg.py](https://github.com/yassine-rd/bird_species_classification/blob/master/flask-main/vgg.py) python file contains vgg model implementation .
+- The [vgg.py](https://github.com/yassine-rd/bird_species_classification/blob/master/flask-main/vgg.py) python file contains vgg model implementation.
 - The [utils.py](https://github.com/yassine-rd/bird_species_classification/blob/master/flask-main/utils.py) python file contains the necessary functions to plot various graphs.
 - The [constants.py](https://github.com/yassine-rd/bird_species_classification/blob/master/flask-main/constants.py) python file contains the definition of various constants.
 
