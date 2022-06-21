@@ -15,3 +15,21 @@ You can set up the configuration in the constants.py python file. In particular,
 - DIR_BASE : path to the folder where the dataset is.
 - PATH_OUT : path to where first model will be saved.
 - VGG_PATH_OUT : path to where vgg model will be saved.
+
+### Steps to run the experiments
+If you want to reproduce the experiments of the paper for a particular configuration:
+1. Run the cnn.py script to train base model.
+```python
+python cnn.py
+```
+2. Run the vgg.py script to train vgg model.
+```python
+python vgg.py
+```
+
+You can directly run the web application without training new models
+1. Run the app.py script
+```python
+python app.py
+```
+2. Go to http://127.0.0.1:5000/ on your web browser
