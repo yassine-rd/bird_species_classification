@@ -18,17 +18,17 @@ You can set up the configuration in the constants.py python file. In particular,
 
 ### Steps to run the experiments
 If you want to reproduce the experiments of the paper for a particular configuration:
-1. Run the cnn.py script to train base model.
+1. Run the [cnn.py](https://github.com/yassine-rd/bird_species_classification/blob/master/flask-main/cnn.py) script to train base model.
 ```python
 python cnn.py
 ```
-2. Run the vgg.py script to train vgg model.
+2. Run the [cnn.py](https://github.com/yassine-rd/bird_species_classification/blob/master/flask-main/vgg.py) script to train vgg model.
 ```python
 python vgg.py
 ```
 
 You can directly run the web application without training new models
-1. Run the app.py script
+1. Run the [app.py](https://github.com/yassine-rd/bird_species_classification/blob/master/flask-main/app.py) script
 ```python
 python app.py
 ```
