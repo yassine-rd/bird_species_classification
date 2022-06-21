@@ -53,7 +53,7 @@ def upload():
         print("Probability: ", probability)
 
         # Printing the output message
-        text = "Bird specie is : " + str(classes[np.argmax(predictions)]) \
+        text = "Bird species is : " + str(classes[np.argmax(predictions)]) \
             + " with a probability of " + str(probability) + "%"
 
     return text
