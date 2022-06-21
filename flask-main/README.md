@@ -27,7 +27,8 @@ python cnn.py
 python vgg.py
 ```
 
-You can directly run the web application without training new models
+You can directly run the web application without training new models.
+In this case, we use a [local model](https://github.com/yassine-rd/bird_species_classification/blob/master/models/my_model_100_96_74.h5) already downloaded in models folder
 1. Run the [app.py](https://github.com/yassine-rd/bird_species_classification/blob/master/flask-main/app.py) script
 ```python
 python app.py
