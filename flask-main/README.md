@@ -22,7 +22,7 @@ If you want to reproduce the experiments of the paper for a particular configura
 ```python
 python cnn.py
 ```
-2. Run the [cnn.py](https://github.com/yassine-rd/bird_species_classification/blob/master/flask-main/vgg.py) script to train vgg model.
+2. Run the [vgg.py](https://github.com/yassine-rd/bird_species_classification/blob/master/flask-main/vgg.py) script to train vgg model.
 ```python
 python vgg.py
 ```
