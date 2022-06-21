@@ -9,8 +9,8 @@ from constants import *
 # Disabling tensorflow warnings
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
-# Defining cnn model
-CNN_MODEL = load_model('../models/my_model_100_96_74.h5')
+# Loading model
+CNN_MODEL = load_model(LOCAL_MODEL)
 
 app = Flask(__name__)
 
@@ -53,8 +53,8 @@ def upload():
         print("Probability: ", probability)
 
         # Printing the output message
-        text = "La classe de l'oiseau sur l'image passée est : " + str(classes[np.argmax(predictions)]) \
-            + " avec une probabilité de " + str(probability) + "%"
+        text = "Bird specie is : " + str(classes[np.argmax(predictions)]) \
+            + " with a probability of " + str(probability) + "%"
 
     return text
 
