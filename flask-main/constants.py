@@ -5,6 +5,8 @@ DIR_BASE = '../dataset'
 DIR_TRAIN = os.path.join(DIR_BASE, 'train')
 DIR_VALID = os.path.join(DIR_BASE, 'valid')
 DIR_TEST = os.path.join(DIR_BASE, 'test')
+PATH_OUT = '../models/base_model.h5'
+VGG_PATH_OUT = '../models/vgg_model.h5'
 
 # Image properties
 IMAGE_SIZE = (224, 224)

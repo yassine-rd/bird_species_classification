@@ -33,7 +33,7 @@ vgg_model = tf.keras.Model(vgg_model.input, out_layer)
 vgg_model.summary()
 
 # Defining where to save the model after each epoch
-filepath = "../models/vgg_model.h5"
+filepath = VGG_PATH_OUT
 
 # Adding a criteria to save only if there was an improvement in the model comparing
 # to the previous epoch (in this case the model is saved if there was a decrease in the loss value)
@@ -62,7 +62,7 @@ vgg_history = vgg_model.fit(
 vgg_model.evaluate(improved_test_ds, use_multiprocessing=True, workers=10)
 
 # Saving the trained model
-vgg_model.save("../models/vgg_model.h5")
+vgg_model.save(VGG_PATH_OUT)
 
 # Plotting accuracy and loss graphs
 plt.style.use('fivethirtyeight')

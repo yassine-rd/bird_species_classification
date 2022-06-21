@@ -1,12 +1,23 @@
+import pathlib
+import pandas as pd
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 from constants import *
-from utils import *
 
 
-# plt.style.use('fivethirtyeight')
-# plot_classes_graph(DIR_TRAIN)
-# plt.style.use('default')
+# Defining a function that creates a pandas.DataFrame containing the bird classes label
+def process(data):
+    """
+    Takes a directory as input and returns a panda DataFrame that contains the bird classes label.
+    """
+    path = pathlib.Path(data)
+    filepaths = list(path.glob(r"*/*.jpg"))
+    labels = list(map(lambda x: os.path.split(os.path.split(x)[0])[1], filepaths))
+    df1 = pd.Series(filepaths, name='filepaths').astype(str)
+    df2 = pd.Series(labels, name='labels')
+    df = pd.concat([df1, df2], axis=1)
+    return df
+
 
 df_train = process(DIR_TRAIN)
 df_test = process(DIR_TEST)
@@ -14,6 +25,10 @@ df_valid = process(DIR_VALID)
 
 # Returning the first five rows of our training data frame
 df_train.head()
+
+# plt.style.use('fivethirtyeight')
+# plot_classes_graph(DIR_TRAIN)
+# plt.style.use('default')
 
 # Keras data generator can be used to pass the images through the convolutional neural network and apply
 # rotation and zoom transformations to the images if desired.

@@ -1,21 +1,5 @@
 import os
-import pathlib
-import pandas as pd
 from matplotlib import pyplot as plt
-
-
-# Defining a function that creates a pandas.DataFrame containing the bird classes label
-def process(data):
-    """
-    Takes a directory as input and returns a panda DataFrame that contains the bird classes label.
-    """
-    path = pathlib.Path(data)
-    filepaths = list(path.glob(r"*/*.jpg"))
-    labels = list(map(lambda x: os.path.split(os.path.split(x)[0])[1], filepaths))
-    df1 = pd.Series(filepaths, name='filepaths').astype(str)
-    df2 = pd.Series(labels, name='labels')
-    df = pd.concat([df1, df2], axis=1)
-    return df
 
 
 # Defining a function that displays a graph representing the number of images per bird class in a directory

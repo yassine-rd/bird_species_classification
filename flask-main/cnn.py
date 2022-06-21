@@ -39,7 +39,7 @@ model.add(Dense(nb_classes, activation='softmax'))
 model.summary()
 
 # Defining where to save the model after each epoch
-filepath = '../models/cnn_mode.h5'
+filepath = PATH_OUT
 
 # Adding a criteria to save only if there was an improvement in the model comparing
 # to the previous epoch (in this case the model is saved if there was a decrease in the loss value)
@@ -68,7 +68,7 @@ history = model.fit(
 model.evaluate(test_ds, use_multiprocessing=True, workers=10)
 
 # Saving the trained model
-model.save('../models/cnn_model.h5')
+model.save(PATH_OUT)
 
 # Plotting accuracy and loss graphs
 plt.style.use('fivethirtyeight')
