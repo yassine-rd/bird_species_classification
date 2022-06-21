@@ -71,3 +71,4 @@ accuracy without needing brand-new sources of data.
 After freezing the original model layers, we added a pooling  and 3 activation layers. We also tested adding additional 
 Batch Normalization and 2D Convolution layers, but they had adverse effects on performance.
 
+### VGG16 classification model trained on 100 bird classes available [here](https://we.tl/t-oe5yLGghEG).
