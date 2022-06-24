@@ -1,17 +1,73 @@
 * {
-  display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
   background-color: #a7cea7;
 }
+
+main{
+  width: 90vw;
+  margin: 0 auto;
+  padding: 30px 20px;
+  min-height: calc(100vh - 88px - 96px);
+}
 #motivation {
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 35px;
+  margin: 30px 40px 20px 40px;
 }
 #colab {
   text-decoration: none;
+}
+footer{
+  background-color: #343a40;
+}
+.footer-socials{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  flex-direction: row;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i{
+  font-size: 1.7rem;
+  transition: color .5s ease;
+}
+.socials a:hover i{
+  color: #c1c3c9;
+}
+.footer-copy {
+  font-family: "Courier New", Arial, Helvetica, sans-serif;
+  display: flex;
+  text-align: center;
+  color: #fff;
+  bottom: 0;
+  width: 100%;
+  font-size: smaller;
+}
+.footer-copy p a{
+  margin: auto;
+  text-decoration: none;
+  color: #fff;
+}
+.footer-copy p{
+
 }
 .img-preview {
   width: 256px;
@@ -33,21 +89,6 @@ body {
 
 input[type='file'] {
   display: none;
-}
-
-.upload-label {
-  display: inline-block;
-  padding: 12px 30px;
-  background: #39d2b4;
-  color: #fff;
-  font-size: 1em;
-  transition: all 0.4s;
-  cursor: pointer;
-}
-
-.upload-label:hover {
-  background: #34495e;
-  color: #39d2b4;
 }
 
 .lds-ellipsis {
