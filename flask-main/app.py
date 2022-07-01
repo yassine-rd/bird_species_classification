@@ -10,7 +10,7 @@ from constants import *
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 # Loading model
-CNN_MODEL = load_model(LOCAL_MODEL)
+model = load_model(LOCAL_MODEL)
 
 app = Flask(__name__)
 
@@ -37,7 +37,7 @@ def upload():
         x = np.expand_dims(x, axis=0)
 
         # Making predictions
-        predictions = CNN_MODEL.predict(x)
+        predictions = model.predict(x)
         print("Predictions: ", predictions)
 
         # Generating batches of tensor image data with real-time data augmentation
@@ -49,7 +49,7 @@ def upload():
         print("Bird specie: ", classes[np.argmax(predictions)])
 
         # Calculating prediction probability
-        probability = round(np.max(CNN_MODEL.predict(x) * 100), 2)
+        probability = round(np.max(model.predict(x) * 100), 2)
         print("Probability: ", probability)
 
         # Printing the output message
