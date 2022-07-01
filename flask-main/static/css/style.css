@@ -7,8 +7,7 @@
 body {
   background-color: #a7cea7;
 }
-
-main{
+main {
   width: 90vw;
   margin: 0 auto;
   padding: 30px 20px;
@@ -21,16 +20,16 @@ main{
 #colab {
   text-decoration: none;
 }
-footer{
+footer {
   background-color: #343a40;
 }
-.footer-socials{
+.footer-socials {
   text-align: center;
   align-items: center;
   justify-content: center;
   display: flex;
 }
-.socials{
+.socials {
   list-style: none;
   display: flex;
   align-items: center;
@@ -38,18 +37,18 @@ footer{
   margin: 15px;
   flex-direction: row;
 }
-.socials li{
+.socials li {
   margin: 0 10px;
 }
-.socials a{
+.socials a {
   text-decoration: none;
   color: #fff;
 }
-.socials a i{
+.socials a i {
   font-size: 1.7rem;
   transition: color .5s ease;
 }
-.socials a:hover i{
+.socials a:hover i {
   color: #c1c3c9;
 }
 .footer-copy {
@@ -61,13 +60,10 @@ footer{
   width: 100%;
   font-size: smaller;
 }
-.footer-copy p a{
+.footer-copy p a {
   margin: auto;
   text-decoration: none;
   color: #fff;
-}
-.footer-copy p{
-
 }
 .img-preview {
   width: 256px;
@@ -78,7 +74,6 @@ footer{
   margin-top: 1em;
   margin-bottom: 1em;
 }
-
 .img-preview > div {
   width: 100%;
   height: 100%;
@@ -86,11 +81,9 @@ footer{
   background-repeat: no-repeat;
   background-position: center;
 }
-
 input[type='file'] {
   display: none;
 }
-
 .lds-ellipsis {
   display: inline-block;
   position: relative;
