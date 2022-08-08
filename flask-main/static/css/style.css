@@ -1,3 +1,31 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/*==================== CSS VARIABLES ====================*/
+:root{
+
+  /*========== Colors ==========*/
+  /* Change theme color */
+  --hue-color: 205;
+  /*Purple 250 - Green 142 - Blue 205 - Pink 340*/
+
+  /* HSL color mode */
+  --primary-background-color: hsl(var(--hue-color), 69%, 78%);
+  --secondary-background-color: hsl(var(--hue-color), 24%, 28%);
+  --image-preview-borders: hsl(var(--hue-color), 24%, 85%);
+  --links-hover: hsl(var(--hue-color), 24%, 80%);
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Poppins', sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --big-font-size: 2rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+}
+
 * {
   flex-direction: column;
   margin: 0;
@@ -6,7 +34,7 @@
 }
 
 body {
-  background-color: #a7cea7;
+  background-color: var(--primary-background-color);
 }
 
 main {
@@ -14,6 +42,10 @@ main {
   margin: 0 auto;
   padding: 30px 20px;
   min-height: calc(100vh - 88px - 96px);
+}
+
+.navbar{
+  background-color: var(--secondary-background-color);
 }
 
 #motivation {
@@ -26,7 +58,7 @@ main {
 }
 
 footer {
-  background-color: #343a40;
+  background-color: var(--secondary-background-color);
 }
 
 .footer-socials {
@@ -60,17 +92,17 @@ footer {
 }
 
 .socials a:hover i {
-  color: #c1c3c9;
+  color: var(--links-hover);
 }
 
 .footer-copy {
-  font-family: "Courier New", Arial, Helvetica, sans-serif;
+  font-family: var(--body-font);
   display: flex;
   text-align: center;
   color: #fff;
   bottom: 0;
   width: 100%;
-  font-size: smaller;
+  font-size: var(--smaller-font-size);
 }
 
 .footer-copy p a {
@@ -83,7 +115,7 @@ footer {
   width: 256px;
   height: 256px;
   position: relative;
-  border: 5px solid #f8f8f8;
+  border: 5px solid var(--image-preview-borders);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   margin-top: 1em;
   margin-bottom: 1em;
