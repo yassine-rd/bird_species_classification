@@ -103,6 +103,7 @@ footer {
   bottom: 0;
   width: 100%;
   font-size: var(--smaller-font-size);
+  margin-top: 0.15rem;
 }
 
 .footer-copy p a {
