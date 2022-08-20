@@ -1,7 +1,7 @@
 # [Bird recognition using deep learning-based methods](https://github.com/yassine-rd/bird_species_classification/blob/master/Poster_en.pdf)
 
 ## Abstract
-From the perspective of a human being, the appearance of the bird varies in terms of shape, size, colour, and other factors. The most efficient approach to recognise the birds is to understand about them through photographs.
+From a human perspective, birds vary in appearance in terms of shape, size, color and other factors. The most effective approach to recognizing birds is to understand them through photographs.
 
 <p align="center">
     <img src="https://github.com/yassine-rd/bird_species_classification/blob/master/images/implementation.png" width="600" height="300"  alt="Implementation chart"/>
