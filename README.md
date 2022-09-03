@@ -23,7 +23,7 @@ Training a deep learning model in order to classify birds on photographs.
 
 ## 🎬 Releases
 
-Version - Alpha Release v1.0  
+Version - [Alpha Release v1.0](https://github.com/yassine-rd/bird_species_classification/releases/tag/v1.0)  
 Initial release date - 24/06/2022
 
 ## 📚 Table of Content
