@@ -1,5 +1,12 @@
 # [Bird recognition using deep learning-based methods](https://github.com/yassine-rd/bird_species_classification/blob/master/Poster_en.pdf)
 
+![GitHub repo size](https://img.shields.io/github/repo-size/yassine-rd/bird_species_classification?color=red&label=repository%20size)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/yassine-rd/bird_species_classification?color=red)
+![GitHub language count](https://img.shields.io/github/languages/count/yassine-rd/bird_species_classification)
+![GitHub top language](https://img.shields.io/github/languages/top/yassine-rd/bird_species_classification)
+![GitHub](https://img.shields.io/github/license/yassine-rd/bird_species_classification?color=yellow)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/yassine-rd/bird_species_classification?color=brightgreen&label=commits)
+
 ## ✨ Abstract
 
 From a human perspective, birds vary in appearance in terms of shape, size, color and other factors. The most effective approach to recognizing birds is to understand them through photographs.
@@ -38,3 +45,9 @@ Initial release date - 24/06/2022
 ## 💬 Contact
 
 For more information please contact yassine.rodani@gmail.com
+
+## 📜 License
+
+This project is licensed under the GNU General Public License v3.0  
+©2022. Yassine RODANI  
+See the license file for more details [LICENSE](https://github.com/yassine-rd/bird_species_classification/blob/master/LICENSE).
