@@ -4,7 +4,7 @@
 
 From a human perspective, birds vary in appearance in terms of shape, size, color and other factors. The most effective approach to recognizing birds is to understand them through photographs.
 
-![Website image](https://github.com/yassine-rd/bird_species_classification/blob/master/images/bird-classifier-banner.png)
+![Project Banner](https://github.com/yassine-rd/bird_species_classification/blob/master/images/bird-classifier-banner.png)
 
 ## 🎯 Project Aim
 
