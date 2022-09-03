@@ -25,8 +25,9 @@ Training a deep learning model in order to classify birds on photographs.
 ![TensorFlow](https://img.shields.io/badge/-TensorFlow-%2312100E.svg?&logo=TensorFlow&style=for-the-badge)
 ![Pandas](https://img.shields.io/badge/pandas-%2312100E.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![HTML](https://img.shields.io/badge/HTML-%2312100E.svg?style=for-the-badge&logo=html5&logoColor=orange)
-![CSS](https://img.shields.io/badge/CSS-%2312100E.svg?style=for-the-badge&logo=css3&logoColor=blue)
+![CSS](https://img.shields.io/badge/CSS-%2312100E.svg?style=for-the-badge&logo=css3&logoColor=informational)
 ![Javascript](https://img.shields.io/badge/Javascript-%2312100E.svg?style=for-the-badge&logo=javascript&logoColor=yellow)
+![jQuery](https://img.shields.io/badge/jQuery-%2312100E.svg?style=for-the-badge&logo=jQuery&logoColor=9cf)
 
 ## 🎬 Releases
 
