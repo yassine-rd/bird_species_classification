@@ -11,8 +11,20 @@ From a human perspective, birds vary in appearance in terms of shape, size, colo
 Training a deep learning model in order to classify birds on photographs.
 
 ## 💻 Technologies
-<a target="_blank"><img alt="Python" src="https://img.shields.io/badge/Python-%2312100E.svg?logo=css&style=for-the-badge&logoColor=blue"/></a>
 
+![Python](https://img.shields.io/badge/Python-%2312100E.svg?logo=python&style=for-the-badge&logoColor=blue)
+![Flask](https://img.shields.io/badge/Flask-%2312100E.svg?logo=flask&style=for-the-badge&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-%2312100E.svg?style=for-the-badge&logo=Keras&logoColor=red)
+![TensorFlow](https://img.shields.io/badge/-TensorFlow-%2312100E.svg?&logo=TensorFlow&style=for-the-badge)
+![Pandas](https://img.shields.io/badge/pandas-%2312100E.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML-%2312100E.svg?style=for-the-badge&logo=html5&logoColor=orange)
+![CSS](https://img.shields.io/badge/CSS-%2312100E.svg?style=for-the-badge&logo=css3&logoColor=blue)
+![Javascript](https://img.shields.io/badge/Javascript-%2312100E.svg?style=for-the-badge&logo=javascript&logoColor=yellow)
+
+## 🎬 Releases
+
+Version - Alpha Release v1.0  
+Initial release date - 24/06/2022
 
 ## 📚 Table of Content
 
