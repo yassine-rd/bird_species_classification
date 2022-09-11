@@ -42,6 +42,7 @@ Initial release date - 24/06/2022
 4) [Models](https://github.com/yassine-rd/bird_species_classification/blob/master/models)
 5) [Web application](https://github.com/yassine-rd/bird_species_classification/blob/master/flask-main/)
 6) [Poster](https://github.com/yassine-rd/bird_species_classification/blob/master/Poster_en.pdf)
+7) [Jupyter Notebook](https://github.com/yassine-rd/bird_species_classification/blob/master/birds_species_classification.ipynb)
 
 ## 💬 Contact
 
